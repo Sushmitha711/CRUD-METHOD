@@ -2,17 +2,18 @@ import React from 'react';
 import {useEffect,useState} from "react"
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import {Link} from "react-router-dom"
 function Users(){
     const [user,setUser]=useState([]);
    
    useEffect(() => {
-      axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
+      axios.get(`http://localhost:3003/user/${id}`)
       .then((res)=>{
         setUser(res.data);
        
        
       })
-    }, []);
+    }, [user]);
    
    const {id}=useParams()
    
@@ -30,13 +31,14 @@ function Users(){
            <tr> <td> <h4>id:{user.id}</h4>  </td></tr>
            <tr> <td> <h4>Name:{user.name}</h4></td></tr>
            <tr> <td><h4>Role:{user.email}</h4></td></tr>
-           <tr> <td><h4>Age:{user.name}</h4></td></tr>
+           <tr> <td><h4>Age:{user.phone}</h4></td></tr>
            </>
            
            
           )}
           </tbody>
           </table>
+          <Link to="/" className='btn btn-danger'>Back</Link>
           </div>
         </div>
     );
