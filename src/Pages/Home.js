@@ -11,7 +11,7 @@ const Home = () => {
    const loadUsers=()=>{
     axios.get("http://localhost:3003/user")
     .then((res)=>{
-      setUsers(res.data.reverse());
+      setUsers(res.data);
     })
 }
    useEffect(() => {
@@ -70,7 +70,6 @@ const Home = () => {
             <button className='btn btn-info' onClick={()=>{HandlerFilter("Bowler")}} >Bowler</button>&nbsp;&nbsp;&nbsp;&nbsp;
             <button className='btn btn-info' onClick={()=>{HandlerFilter("Batsman")}} >Batsman</button>&nbsp;&nbsp;&nbsp;&nbsp;
             <button className='btn btn-info' onClick={()=>{HandlerFilter("All Rounder")}}>All Rounder</button>
-            <Link to={"users"} className='btn btn-info' >All</Link>
         </div>
         </div>
         </div>
