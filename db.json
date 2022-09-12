@@ -11,42 +11,6 @@
       "email": "Batsman",
       "phone": "21",
       "id": 2
-    },
-    {
-      "name": "Ranjitha",
-      "email": "All Rounder",
-      "phone": "23",
-      "id": 3
-    },
-    {
-      "name": "Dinesh",
-      "email": "Bowler",
-      "phone": "25",
-      "id": 4
-    },
-    {
-      "name": "Girish",
-      "email": "Batsman",
-      "phone": "23",
-      "id": 5
-    },
-    {
-      "name": "Kiran",
-      "email": "All Rounder",
-      "phone": "23",
-      "id": 6
-    },
-    {
-      "name": "Abhi",
-      "email": "Batsman",
-      "phone": "26",
-      "id": 7
-    },
-    {
-      "name": "Gopichand",
-      "email": "All Rounder",
-      "phone": "25",
-      "id": 8
     }
   ]
 }
