@@ -1,16 +1,10 @@
 {
   "user": [
     {
-      "name": "Sushmitha",
-      "email": "Bowler",
-      "phone": "23",
-      "id": 1
-    },
-    {
-      "name": "Divya",
+      "name": "Sushmitha N",
       "email": "Batsman",
-      "phone": "21",
-      "id": 2
+      "phone": "24",
+      "id": 7
     }
   ]
 }

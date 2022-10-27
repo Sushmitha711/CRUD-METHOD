@@ -10,12 +10,10 @@ function Users(){
       axios.get(`http://localhost:3003/user/${id}`)
       .then((res)=>{
         setUser(res.data);
-       
-       
       })
     }, [user]);
    
-   const {id}=useParams()
+   const {id}=useParams();
    
    
     return (

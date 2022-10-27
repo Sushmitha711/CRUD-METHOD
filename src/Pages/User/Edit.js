@@ -29,7 +29,8 @@ function Edit(){
   
     function Update(e) {
       e.preventDefault();
-      axios.put(`http://localhost:3003/user/${id}`, data).then(navigate("/"));
+      axios.put(`http://localhost:3003/user/${id}`, data)
+      .then(navigate("/"));
     }
 
     return(
